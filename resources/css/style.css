@@ -1,9 +1,177 @@
 body {
+    margin: 0 auto;
     background-color: black;
     font-size: 16px;
     background-image: url('../assets/susan-q-yin-xNLAq4U3GT8-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: 'Libre Caslon Display', serif;
 }
 
+
+nav {
+    display: flex;
+    border-bottom: 3px solid white;
+}
+
+.navbar {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    text-decoration: overline;
+    font-size: 3rem;
+    letter-spacing: .5;
+
+}
+
+a {
+    list-style-type: none;
+}
+/**Gallery*/
+
+.main {
+    font-family: 'Xanh Mono', monospace;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    letter-spacing: 0.5;
+    margin: 3rem;
+    text-shadow: 5px 5px 5px black;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+}
+
+.gallery p {
+    margin: 0 auto;
+    padding: .5rem;
+    font-family: 'Xanh Mono', monospace;
+    font-weight: bold;
+    font-size: 2.4rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 50%;
+    width: 35%;
+    text-decoration: underline;
+}
+.gallery img :nth-child(2), .gallery img :nth-child(3){
+    box-shadow: 10px 10px 10px b4b4b6;
+}
+
+.images {
+    height: 16rem;
+    width: 21rem;
+    margin: 2rem 10rem;
+    box-shadow: 10px 10px 10px white;
+    padding: 3px;
+}
+
+.images:hover {
+    filter: invert(100%);
+    border-radius: 50%;
+}
+
+.rotate {
+    
+    max-width: 16rem;
+}
+
+.coffee {
+    order: 2;
+}
+
+.pencil {
+    order: 1;
+    border-radius: 2px 0;
+}
+
+.right{
+    align-self: flex-end;
+}
+
+.left {
+    align-self: flex-start;
+}
+
+.activities {
+    margin-top: 7rem;
+}
+
+.activities-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5rem;
+}
+
+
+.activity-images {
+    height: 18rem;
+    width: 24rem;
+}
+
+.activity-images:hover {
+    filter: invert(100%);
+}
+
+@media only screen and (max-width:1390px) {
+    body {
+        text-align: center;
+    }
+
+/*
+    .activities {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    */
+
+    .activity-images {
+        padding: 3rem 0;
+
+    }
+}
+
+@media only screen and (max-width: 680px) {
+
+    .navbar li {
+        flex: 1;
+    }
+
+    header h1 {
+       font-size: 3.5rem;
+    }
+
+    header p {
+        font-size: 1.688rem;
+    }
+
+    .images{
+        align-items: center;
+    }
+
+
+}
+
+footer {
+    margin: 10rem 0 4rem;
+    font-weight: bold;
+}
+
+footer h2 {
+    text-decoration: underline;
+}
+
+footer span {
+    float: left;
+    margin-left: 1.5rem;
+}
